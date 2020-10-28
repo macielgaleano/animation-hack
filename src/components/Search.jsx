@@ -1,7 +1,7 @@
 // import reactDOM from "react-dom";
 import "../../node_modules/font-awesome/css/font-awesome.min.css";
 import React from "react";
-import "../assets/HeaderHack.scss";
+import "../assets/headerHack.scss";
 
 const Search = (props) => {
   return (
@@ -14,7 +14,7 @@ const Search = (props) => {
       <input
         type="text"
         onChange={(e) => {
-          props.search(e.target.value);
+          props.handleSearch(e.target.value);
         }}
         name="textSearched"
         className="form-control "
